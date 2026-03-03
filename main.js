@@ -39,14 +39,15 @@ for (let i = 0; i < dataBarang.length; i++) {
  document.getElementById("hasil").innerHTML=output 
 
 }
+
+// fungsi untuk menghapus barang terakhir dari keranjang 
 function hapus () {
-  
+  dataBarang.pop()
+  tampilkan()
 }
 
+// fungsi untuk mereset keranjang 
 function reset () {
-  
-}
-
-function hitung () {
-  
+  dataBarang=[]
+  tampilkan ()
 }
